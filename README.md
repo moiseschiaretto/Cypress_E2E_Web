@@ -41,38 +41,43 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
 ## Configuração básica do Ambiente do Projeto "projeto_web"
    1. Instalar o VSCode
+      
         https://code.visualstudio.com
+      
    2. Configurar o VSCode conforme o estilo do desenvolvedor / QA
+      
         Curso gratuito para personalizar o VSCode, apenas inscrever-se no site.
+      
         https://www.udemy.com/course/produtividade-vscode
+      
    3. VSCode cores do ambiente de trabalho
         - Menu View, Command Palette ou Teclas CTRL + SHIFT + P
         - Preferences: Color Theme
-   4. Instalar o Node.js
+   6. Instalar o Node.js
         https://nodejs.org/en
         Node é um ambiente para execução de código em Javascript, para aplicação Web, empacota e interpretar o código em Javascript (Cypress).
         https://www.youtube.com/watch?v=vYekSMBCCiM
-   5. Terminal do VSCode
+   7. Terminal do VSCode
         No VSCode acessar o Menu Terminal, opção New Terminal
         Teclas de atalho: CTRL + SHIFT + ‘ (aspas simples)
-   6. Acesssar a pasta/diretório do "projeto" para depois instalar as configurações do Cypress 13 ou versão posterior
+   8. Acesssar a pasta/diretório do "projeto" para depois instalar as configurações do Cypress 13 ou versão posterior
         - No terminal digitar o comando "cd" e o caminho da pasta/diretório do projeto, por exemplo:
         cd C:\Cypress\projeto_web
-   7. Estando dentro da pasta/diretório do "projeto", digitar:
+   9. Estando dentro da pasta/diretório do "projeto", digitar:
         npm init -y
         - Este comando acima irá criar o arquivo "package.json".
-   8. Instalar o Cypress 13 ou versão posterior, digitar:
+   10. Instalar o Cypress 13 ou versão posterior, digitar:
         npm install cypress --save-dev
-   9. Instalar o plugin do Cucumber, que permite escrever na linguagem Gherkin o BDD, digitar:
+   11. Instalar o plugin do Cucumber, que permite escrever na linguagem Gherkin o BDD, digitar:
         npm install cypress-cucumber-preprocessor --save-dev
-   10. Acessar o Cypress para criar a estrutura inicial do projeto, digitar:
+   12. Acessar o Cypress para criar a estrutura inicial do projeto, digitar:
         npx cypress open
-   11. Aguardar a janela do Cypress ser exibida, clicar sobre a opção:
+   13. Aguardar a janela do Cypress ser exibida, clicar sobre a opção:
         - "E2E Testing"
-   12. Clicar no botão "Start E2E Testing in Chrome".
-   13. Fechar a janela do "Cypress".
-   14. Observar que no "Frame EXPLORER" à esquerda da tela foi criada a estrutura inicial do projeto.
-   15. Aproveitar para instalar o comando "xpath" caso precisar utilizar no código, digitar no terminal:
+   14. Clicar no botão "Start E2E Testing in Chrome".
+   15. Fechar a janela do "Cypress".
+   16. Observar que no "Frame EXPLORER" à esquerda da tela foi criada a estrutura inicial do projeto.
+   17. Aproveitar para instalar o comando "xpath" caso precisar utilizar no código, digitar no terminal:
         npm install -D cypress-xpath
 
 
