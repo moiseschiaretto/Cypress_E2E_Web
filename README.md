@@ -180,11 +180,11 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
 ## Arquivo "report.js"
 
-	**Dashboard / Report e Scripts de Execuções em Cypress, segue o passo a passo (são 4 passos no total).**
+	Dashboard / Report e Scripts de Execuções em Cypress, segue o passo a passo (são 4 passos no total).
  
-	**1.** No Arquivo "package.json" add em "cypress-cucumber-preprocessor"
+	1. No Arquivo "package.json" add em "cypress-cucumber-preprocessor"
  
-	**2.** - Pasta "cucumberJson" irá gerar o BDD apresentado no Dashboard
+	- Pasta "cucumberJson" irá gerar o BDD apresentado no Dashboard
 
 	```
                 ,
@@ -193,7 +193,7 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
                 }
 	```
 
-        **2.** Terminal do VS Code digitar a linha de comando abaixo para instalar o "multiple-cucumber-html-reporter"
+        2. Terminal do VS Code digitar a linha de comando abaixo para instalar o "multiple-cucumber-html-reporter"
 	
         Linha de comando para a instalação:
 	
@@ -203,9 +203,9 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 	
                 "multiple-cucumber-html-reporter": "^1.18.0"
 
-        **3.** Criar o Arquivo "report.js" na pasta Cypress e adicionar o conteúdo abaixo para o preenchimento do Dashboard.
+        3. Criar o Arquivo "report.js" na pasta Cypress e adicionar o conteúdo abaixo para o preenchimento do Dashboard.
 	
-        **Personalizar o 3º Frame do Dashborad coma as informações do Projeto.**
+        - Personalizar o 3º Frame do Dashborad coma as informações do Projeto.
 
 	
 	```
@@ -237,7 +237,7 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
         ```
 
 
-        **4.** Criar Scripts de Execução no Arquivo "package.json", para facilitar a execução do projeto.
+        4. Criar Scripts de Execução no Arquivo "package.json", para facilitar a execução do projeto.
 	
         Caso desejar criar "scripts" de execuções do projeto, adicionar no arquivo "package.json".
 
@@ -254,13 +254,13 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
                 }, 
         ```
 	
-        **Observação para a execução dos scripts acima no Terminal do VSCode:**
+        Observação para a execução dos scripts acima no Terminal do VSCode:
 	
-           **1.** Sempre excluir as pastas "cucumber-json" e "cucumber-report" com informações das execuções anteriores (npm run report:clear).
+           1. Sempre excluir as pastas "cucumber-json" e "cucumber-report" com informações das execuções anteriores (npm run report:clear).
 	   
-           **2.** Realizar as novas execuções de feature (npm run test1:chrome).
+           2. Realizar as novas execuções de feature (npm run test1:chrome).
 	   
-           **3.** Sempre gerar o report atual (npm run cy:report).
+           3. Sempre gerar o report atual (npm run cy:report).
 	   
-           **4.** Acessar o Dashboard / Report (npm run cy:visit).
+           4. Acessar o Dashboard / Report (npm run cy:visit).
 
