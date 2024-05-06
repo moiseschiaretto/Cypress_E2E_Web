@@ -53,37 +53,64 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
    3. VSCode cores do ambiente de trabalho
         - Menu View, Command Palette ou Teclas CTRL + SHIFT + P
         - Preferences: Color Theme
-   6. Instalar o Node.js
+   4. Instalar o Node.js
+    
         https://nodejs.org/en
+      
         Node é um ambiente para execução de código em Javascript, para aplicação Web, empacota e interpretar o código em Javascript (Cypress).
+      
         https://www.youtube.com/watch?v=vYekSMBCCiM
-   7. Terminal do VSCode
+      
+   5. Terminal do VSCode
+      
         No VSCode acessar o Menu Terminal, opção New Terminal
+      
         Teclas de atalho: CTRL + SHIFT + ‘ (aspas simples)
-   8. Acesssar a pasta/diretório do "projeto" para depois instalar as configurações do Cypress 13 ou versão posterior
+      
+   6. Acesssar a pasta/diretório do "projeto" para depois instalar as configurações do Cypress 13 ou versão posterior
+      
         - No terminal digitar o comando "cd" e o caminho da pasta/diretório do projeto, por exemplo:
+          
         cd C:\Cypress\projeto_web
-   9. Estando dentro da pasta/diretório do "projeto", digitar:
+      
+   8. Estando dentro da pasta/diretório do "projeto", digitar:
+      
         npm init -y
+      
         - Este comando acima irá criar o arquivo "package.json".
-   10. Instalar o Cypress 13 ou versão posterior, digitar:
+          
+   9. Instalar o Cypress 13 ou versão posterior, digitar:
+       
         npm install cypress --save-dev
-   11. Instalar o plugin do Cucumber, que permite escrever na linguagem Gherkin o BDD, digitar:
+      
+   10. Instalar o plugin do Cucumber, que permite escrever na linguagem Gherkin o BDD, digitar:
+       
         npm install cypress-cucumber-preprocessor --save-dev
-   12. Acessar o Cypress para criar a estrutura inicial do projeto, digitar:
+       
+   11. Acessar o Cypress para criar a estrutura inicial do projeto, digitar:
+       
         npx cypress open
-   13. Aguardar a janela do Cypress ser exibida, clicar sobre a opção:
+       
+   12. Aguardar a janela do Cypress ser exibida, clicar sobre a opção:
+       
         - "E2E Testing"
-   14. Clicar no botão "Start E2E Testing in Chrome".
-   15. Fechar a janela do "Cypress".
-   16. Observar que no "Frame EXPLORER" à esquerda da tela foi criada a estrutura inicial do projeto.
-   17. Aproveitar para instalar o comando "xpath" caso precisar utilizar no código, digitar no terminal:
+          
+   13. Clicar no botão "Start E2E Testing in Chrome".
+       
+   14. Fechar a janela do "Cypress".
+
+   15. Observar que no "Frame EXPLORER" à esquerda da tela foi criada a estrutura inicial do projeto.
+ 
+   16. Aproveitar para instalar o comando "xpath" caso precisar utilizar no código, digitar no terminal:
+
         npm install -D cypress-xpath
 
 
 ## Arquivo "e2e.js"
    - Caminho na estrutura do projeto: projeto_web\cypress\support\e2e.js
+     
    - Adicionar a este arquivo a seguinte configuração.
+     
    ```
                 // Exceções não detectadas
                 // https://docs.cypress.io/guides/references/error-messages#Uncaught-exceptions-from-your-application
@@ -99,8 +126,11 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
 
 ## Arquivo "cypress.config.js"
+
    - Caminho na estrutura do projeto: projeto_web\cypress.config.js
+
    Adicionar a este arquivo a seguinte configuração.
+   
    
    ```
                 const cucumber = require('cypress-cucumber-preprocessor').default;
@@ -131,9 +161,11 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
    ```
 
 ## Arquivo "package.json"
+
    - Caminho na estrutura do projeto: projeto_web\package.json
+     
    Adicionar a este arquivo a seguinte configuração.
-   
+      
    ```
                 ,
                 "cypress-cucumber-preprocessor": {
@@ -147,8 +179,11 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
 
 ## Arquivo "report.js"
+
 	Dashboard / Report e Scripts de Execuções em Cypress, segue o passo a passo (são 4 passos no total).
+ 
 	1. No Arquivo "package.json" add em "cypress-cucumber-preprocessor"
+ 
 	2. - Pasta "cucumberJson" irá gerar o BDD apresentado no Dashboard
 
 	```
@@ -158,15 +193,21 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
                 }
 	```
 
-        2. Terminal do VS Code digitar a linha de comando abaixo para instalar o "multiple-cucumber-html-reporter "
+        2. Terminal do VS Code digitar a linha de comando abaixo para instalar o "multiple-cucumber-html-reporter"
+	
         Linha de comando para a instalação:
+	
                 npm install multiple-cucumber-html-reporter --save-dev
+		
         Gera em "package.json" em "devDependencies"
+	
                 "multiple-cucumber-html-reporter": "^1.18.0"
 
-        3. Criar o Arquivo "report.js" na pasta Cypress e adicionar o conteúdo abaixo para o preenchimento do Dashboard
+        3. Criar o Arquivo "report.js" na pasta Cypress e adicionar o conteúdo abaixo para o preenchimento do Dashboard.
+	
         Personalizar o 3º Frame do Dashborad coma as informações do Projeto.
-        
+
+	
 	```
                 const report = require('multiple-cucumber-html-reporter');
                 report.generate({
@@ -195,9 +236,12 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
                 });      
         ```
 
+
         4. Criar Scripts de Execução no Arquivo "package.json", para facilitar a execução do projeto.
+	
         Caso desejar criar "scripts" de execuções do projeto, adicionar no arquivo "package.json".
-        
+
+	
 	```
                "scripts": {
                 "report:clear": "rm -r cypress/e2e/step_definitions/cucumber-report && rm -r cypress/e2e/step_definitions/cucumber-json
@@ -211,7 +255,11 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
         ```
 	
         Observação para a execução dos scripts acima no Terminal do VSCode:
+	
            1. Sempre excluir as pastas "cucumber-json" e "cucumber-report" com informações das execuções anteriores (npm run report:clear).
+	   
            2. Realizar as novas execuções de feature (npm run test1:chrome).
+	   
            3. Sempre gerar o report atual (npm run cy:report).
+	   
            4. Acessar o Dashboard / Report (npm run cy:visit).
