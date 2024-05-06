@@ -1,6 +1,5 @@
-# gitignore
-/package-lock.json
 /node_modules/
+/package-lock.json
 /cypress/fixtures/
 /cypress/e2e/step_definitions/evidencias/
 /cypress/e2e/step_definitions/resources/

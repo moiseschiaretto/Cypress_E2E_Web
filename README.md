@@ -9,12 +9,15 @@
 projeto_web
     |
     |-----README.md
-    |-----e2e.js
     |-----cypress.config.js
     |-----package.json
     |-----.gitgnore
     |
     |-----cypress
+	    |---support
+	    |   |---e2e.js
+	    |
+	    |
             |---e2e
 	        |---step_definitions
 	    	|       |---01_WizardDadosVeiculo_SemFalha.feature
