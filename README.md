@@ -3,7 +3,7 @@
   
 - Descrição das explicações de cada item da 'estrutura do projeto "projeto_web" desenvolvido'.
   
-**- Cypress versão 13** 
+- **Cypress versão 13** 
 
 ## Estrutura do Projeto "projeto_web"
 
