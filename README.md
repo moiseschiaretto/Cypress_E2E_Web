@@ -266,3 +266,7 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 	   
            4. Acessar o Dashboard / Report (npm run cy:visit).
 
+
+
+
+![01_Ambiente_DEV_Cypress](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/893d54c9-46f3-46e7-b032-38c4e18a3063)
