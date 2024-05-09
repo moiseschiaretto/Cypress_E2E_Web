@@ -5,6 +5,9 @@
   
 - **Cypress versão 13**
 
+![02_cypress_logo_social](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/3ad02b9a-f552-459a-be8b-af123051f367)
+
+
 
 ## Entendendo o Ambiente de Automatização de Testes do Cypress 13
 
