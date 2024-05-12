@@ -50,6 +50,20 @@ projeto_web
 ## Arquivo README.md
 Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
+## Diretório "step_definitions"
+- Cenários de BDD **"Sem Falha", "Com Falha" e "Indefinido".
+- 
+  	- 01_WizardDadosVeiculo_SemFalha.feature
+  	  
+  	- 02_WizardDadosVeiculo_ComFalha.feature
+ 
+  	- 03_WizardDadosVeiculo_Indefinido.feature
+ 
+	![BDD_SEM_E_COM_FALHA](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/b28e5f30-1e4b-4324-a574-db8b0619498b)
+
+
+     
+
 ## Configuração básica do Ambiente do Projeto "projeto_web"
    **1.** Instalar o VSCode
       
