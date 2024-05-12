@@ -52,7 +52,7 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
 ## Diretório "step_definitions"
 - Cenários de BDD **"Sem Falha", "Com Falha" e "Indefinido".**
-- 
+
   	- 01_WizardDadosVeiculo_SemFalha.feature
   	  
   	- 02_WizardDadosVeiculo_ComFalha.feature
