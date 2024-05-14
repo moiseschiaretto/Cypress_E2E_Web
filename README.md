@@ -144,16 +144,16 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
    - Adicionar a este arquivo a seguinte configuração.
      
    ```
-                // Exceções não detectadas
-                // https://docs.cypress.io/guides/references/error-messages#Uncaught-exceptions-from-your-application
-                // https://docs.cypress.io/api/cypress-api/catalog-of-events#Uncaught-Exceptions
-                Cypress.on('uncaught:exception', (err, runnable) => {
-                        // returning false here prevents Cypress from
-                        // failing the test
-                return false
-                })
-                // Xpath, opcional na versão 13 do Cypress
-                require('cypress-xpath')
+	// Exceções não detectadas
+	// https://docs.cypress.io/guides/references/error-messages#Uncaught-exceptions-from-your-application
+	// https://docs.cypress.io/api/cypress-api/catalog-of-events#Uncaught-Exceptions
+	Cypress.on('uncaught:exception', (err, runnable) => {
+		// returning false here prevents Cypress from
+		// failing the test
+	return false
+	})
+	// Xpath, opcional na versão 13 do Cypress
+	require('cypress-xpath')
    ```
 
 
@@ -164,31 +164,32 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
    Adicionar a este arquivo a seguinte configuração.
    
    
-   ```
-                const cucumber = require('cypress-cucumber-preprocessor').default;
-                const { defineConfig } = require("cypress");
+```
 
-                module.exports = defineConfig({
-                e2e: {
-                setupNodeEvents(on, config) {
-                on('file:preprocessor', cucumber())
-                },
-                specPattern: "cypress/e2e/step_definitions/*.feature",
-                testIsolation: false,
-                /*
-                testIsolation: false,
-                *** Resolve o problema abaixo!!! ***
-                Default blank page
-                This page was cleared by navigating to about:blank.
-                All active session data (cookies, localStorage and sessionStorage) across all domains are cleared.
-                */
-                "trashAssetsBeforeRuns": true,
-                "video": false,
-                "viewportWidth": 1024,
-                "viewportHeight": 768,
-                "defaultCommandTimeout": 10000
-                },
-                })
+const cucumber = require('cypress-cucumber-preprocessor').default;
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+e2e: {
+setupNodeEvents(on, config) {
+	on('file:preprocessor', cucumber())
+	},
+	specPattern: "cypress/e2e/step_definitions/*.feature",
+	testIsolation: false,
+	/*
+	testIsolation: false,
+	*** Resolve o problema abaixo!!! ***
+	Default blank page
+	This page was cleared by navigating to about:blank.
+	All active session data (cookies, localStorage and sessionStorage) across all domains are cleared.
+	*/
+	"trashAssetsBeforeRuns": true,
+	"video": false,
+	"viewportWidth": 1024,
+	"viewportHeight": 768,
+	"defaultCommandTimeout": 10000
+},
+})
 
    ```
 
@@ -198,16 +199,17 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
      
    Adicionar a este arquivo a seguinte configuração.
       
-   ```
-                ,
-                "cypress-cucumber-preprocessor": {
-                "nonGlobalStepDefinitions": false,
-                "stepDefinitions": "cypress/e2e/step_definitions"
-                },
-                "cucumberJson": {
-                "generate": true
-                }
-   ```
+```
+,
+"cypress-cucumber-preprocessor": {
+"nonGlobalStepDefinitions": false,
+"stepDefinitions": "cypress/e2e/step_definitions"
+},
+"cucumberJson": {
+"generate": true
+}
+
+```
 
 
 ## Arquivo "report.js"
@@ -219,10 +221,11 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 	- Pasta "cucumberJson" irá gerar o BDD apresentado no Dashboard
 
 	```
-                ,
-                "cucumberJson": {
-                "generate": true
-                }
+	,
+	"cucumberJson": {
+	"generate": true
+	}
+ 
 	```
 
         2. Terminal do VS Code digitar a linha de comando abaixo para instalar o "multiple-cucumber-html-reporter"
@@ -241,31 +244,31 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
 	
 	```
-                const report = require('multiple-cucumber-html-reporter');
-                report.generate({
-                jsonDir: './cypress/cucumber-json/',
-                reportPath: './cypress/cucumber-report/',
-                metadata:{
-                        device: 'Local test machine',
-                browser: {
-                        name: 'chrome',
-                        version: '92'
-                        },
-                        platform: {
-                        name: 'Windows',
-                        version: '10'
-                        }
-                },
-                customData: {
-                        title: 'Run info',
-                        data: [
-                        {label: 'Project', value: 'Automatização em Cypress'},
-                        {label: 'Release', value: '1.1'},
-                {label: 'Execution Start Time', value: 'Mai 06th 2024, 09:00 AM'},
-                        {label: 'Execution End Time', value: 'Mai 06th 2024, 09:05 AM'}
-                        ]
-                }
-                });      
+	const report = require('multiple-cucumber-html-reporter');
+	report.generate({
+	jsonDir: './cypress/cucumber-json/',
+	reportPath: './cypress/cucumber-report/',
+	metadata:{
+		device: 'Local test machine',
+	browser: {
+		name: 'chrome',
+		version: '92'
+		},
+		platform: {
+		name: 'Windows',
+		version: '10'
+		}
+	},
+	customData: {
+		title: 'Run info',
+		data: [
+		{label: 'Project', value: 'Automatização em Cypress'},
+		{label: 'Release', value: '1.1'},
+	{label: 'Execution Start Time', value: 'Mai 06th 2024, 09:00 AM'},
+		{label: 'Execution End Time', value: 'Mai 06th 2024, 09:05 AM'}
+		]
+	}
+	});      
         ```
 
 
@@ -275,15 +278,15 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
 	
 	```
-               "scripts": {
-                "report:clear": "rm -r cypress/e2e/step_definitions/cucumber-report && rm -r cypress/e2e/step_definitions/cucumber-json
-                || rm -r cypress/e2e/step_definitions/cucumber-report || rm -r cypress/e2e/step_definitions/cucumber-json",
-                "test1:chrome": "cypress run --spec cypress/e2e/step_definitions/01_WizardDadosVeiculo_SemFalha.feature --browser chrome --headless",
-                "test2:chrome": "cypress run --spec cypress/e2e/step_definitions/02_WizardDadosVeiculo_ComFalha.feature --browser chrome --headless",
-                "test3:chrome": "cypress run --spec cypress/e2e/step_definitions/03_WizardDadosVeiculo_Indefinido.feature --browser chrome --headless",
-                "cy:report": "node .cypress/e2e/step_definitions/report.js",
-                "cy:visit": "C:/Cypress/projeto_web/cypress/cucumber-report/index.html --browser chrome"
-                }, 
+       "scripts": {
+	"report:clear": "rm -r cypress/e2e/step_definitions/cucumber-report && rm -r cypress/e2e/step_definitions/cucumber-json
+	|| rm -r cypress/e2e/step_definitions/cucumber-report || rm -r cypress/e2e/step_definitions/cucumber-json",
+	"test1:chrome": "cypress run --spec cypress/e2e/step_definitions/01_WizardDadosVeiculo_SemFalha.feature --browser chrome --headless",
+	"test2:chrome": "cypress run --spec cypress/e2e/step_definitions/02_WizardDadosVeiculo_ComFalha.feature --browser chrome --headless",
+	"test3:chrome": "cypress run --spec cypress/e2e/step_definitions/03_WizardDadosVeiculo_Indefinido.feature --browser chrome --headless",
+	"cy:report": "node .cypress/e2e/step_definitions/report.js",
+	"cy:visit": "C:/Cypress/projeto_web/cypress/cucumber-report/index.html --browser chrome"
+	}, 
         ```
 	
         Observação para a execução dos scripts acima no Terminal do VSCode:
