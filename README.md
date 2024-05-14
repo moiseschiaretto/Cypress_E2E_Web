@@ -58,8 +58,13 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
   	- 02_WizardDadosVeiculo_ComFalha.feature
  
   	- 03_WizardDadosVeiculo_Indefinido.feature
- 
-	![BDD_SEM_E_COM_FALHA](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/b28e5f30-1e4b-4324-a574-db8b0619498b)
+
+
+![18_TDD](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/5417acfb-fe89-4b43-aac5-2d9783e54236)
+
+
+![TDD_RGR_IMG_MENOR](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/a8cbb950-60e5-4353-a31f-4445011251a0)
+
 
 ## Execuções do BDD **"Sem Falha", "Com Falha" e "Indefinido".**
 
