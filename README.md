@@ -309,7 +309,7 @@ customData: {
 
 
 
-**Observação para a execução dos scripts acima no Terminal do VSCode:**
+## Execução dos scripts acima no Terminal do VSCode
 
 **1.** Sempre excluir as pastas "cucumber-json" e "cucumber-report" com informações das execuções anteriores.
 
