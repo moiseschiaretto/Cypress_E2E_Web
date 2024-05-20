@@ -77,12 +77,14 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
 
 ## Configuração básica do Ambiente do Projeto "projeto_web"
+
+
+![VS_CODE](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/9940ae60-7fac-4549-a744-e8fa1c389045)
+
+   
    **1.** Instalar o VSCode
       
         https://code.visualstudio.com
-
-
- 	![VS_CODE](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/cf72e4f5-3703-45fb-a552-cb1457621f7e)
 
       
    **2.** Configurar o VSCode conforme o estilo do desenvolvedor / QA
