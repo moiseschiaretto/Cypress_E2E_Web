@@ -278,31 +278,42 @@ setupNodeEvents(on, config) {
 	});      
         ```
 
+## Scripts de Execução
 
-        4. Criar Scripts de Execução no Arquivo "package.json", para facilitar a execução do projeto.
-	
-        Caso desejar criar "scripts" de execuções do projeto, adicionar no arquivo "package.json".
+- Criar Scripts de Execução no Arquivo "package.json", para facilitar a execução do projeto.
+
+- Caso desejar criar "scripts" de execuções do projeto, adicionar no arquivo "package.json".
 
 	
-	```
-       "scripts": {
-		"report:clear": "rm -r cypress/e2e/step_definitions/cucumber-report && rm -r cypress/e2e/step_definitions/cucumber-json
-		|| rm -r cypress/e2e/step_definitions/cucumber-report || rm -r cypress/e2e/step_definitions/cucumber-json",
-		"test1:chrome": "cypress run --spec cypress/e2e/step_definitions/01_WizardDadosVeiculo_SemFalha.feature --browser chrome --headless",
-		"test2:chrome": "cypress run --spec cypress/e2e/step_definitions/02_WizardDadosVeiculo_ComFalha.feature --browser chrome --headless",
-		"test3:chrome": "cypress run --spec cypress/e2e/step_definitions/03_WizardDadosVeiculo_Indefinido.feature --browser chrome --headless",
-		"cy:report": "node .cypress/e2e/step_definitions/report.js",
-		"cy:visit": "C:/Cypress/projeto_web/cypress/cucumber-report/index.html --browser chrome"
-	}, 
-        ```
+```
+
+"scripts": {
+	"report:clear": "rm -r cypress/e2e/step_definitions/cucumber-report && rm -r cypress/e2e/step_definitions/cucumber-json
+	|| rm -r cypress/e2e/step_definitions/cucumber-report || rm -r cypress/e2e/step_definitions/cucumber-json",
+	"test1:chrome": "cypress run --spec cypress/e2e/step_definitions/01_WizardDadosVeiculo_SemFalha.feature --browser chrome --headless",
+	"test2:chrome": "cypress run --spec cypress/e2e/step_definitions/02_WizardDadosVeiculo_ComFalha.feature --browser chrome --headless",
+	"test3:chrome": "cypress run --spec cypress/e2e/step_definitions/03_WizardDadosVeiculo_Indefinido.feature --browser chrome --headless",
+	"cy:report": "node .cypress/e2e/step_definitions/report.js",
+	"cy:visit": "C:/Cypress/projeto_web/cypress/cucumber-report/index.html --browser chrome"
+},
+
+```
 	
-        Observação para a execução dos scripts acima no Terminal do VSCode:
-	
-           1. Sempre excluir as pastas "cucumber-json" e "cucumber-report" com informações das execuções anteriores (npm run report:clear).
-	   
-           2. Realizar as novas execuções de feature (npm run test1:chrome).
-	   
-           3. Sempre gerar o report atual (npm run cy:report).
-	   
-           4. Acessar o Dashboard / Report (npm run cy:visit).
+**Observação para a execução dos scripts acima no Terminal do VSCode:**
+
+**1.** Sempre excluir as pastas "cucumber-json" e "cucumber-report" com informações das execuções anteriores.
+
+	**npm run report:clear**
+
+**2.** Realizar as novas execuções de feature.
+
+	**npm run test1:chrome**
+
+**3.** Sempre gerar o report atual.
+
+	**npm run cy:report**
+
+**4.** Acessar o Dashboard / Report.
+
+	**npm run cy:visit**
 
