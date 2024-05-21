@@ -311,7 +311,7 @@ customData: {
 
 ## Execução dos Scripts acima no Terminal do VSCode
 
-**1.** Sempre excluir as pastas "cucumber-json" e "cucumber-report" com informações das execuções anteriores.
+**1.** Excluir as pastas "cucumber-json" e "cucumber-report" com informações das execuções anteriores.
 
 	npm run report:clear
 
