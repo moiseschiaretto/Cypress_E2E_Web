@@ -315,11 +315,15 @@ customData: {
 
 	npm run report:clear
 
-**2.** Realizar as novas execuções de feature.
+**2.** Realizar as novas execuções das Features "Sem Falha", "Com Falha", "Indefinido".
 
 	npm run test1:chrome
 
-**3.** Sempre gerar o report atual.
+ 	npm run test2:chrome
+
+  	npm run test3:chrome
+
+**3.** Gerar o report atual.
 
 	npm run cy:report
 
