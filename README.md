@@ -132,7 +132,7 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
        
    **12.** Aguardar a janela do Cypress ser exibida, clicar sobre a opção:
        
-        - "E2E Testing"
+        "E2E Testing"
           
    **13.** Clicar no botão "Start E2E Testing in Chrome".
        
