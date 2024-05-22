@@ -90,8 +90,12 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
         https://www.udemy.com/course/produtividade-vscode
       
    **3**. VSCode cores do ambiente de trabalho
+   
         - Menu View, Command Palette ou Teclas CTRL + SHIFT + P
+	
         - Preferences: Color Theme
+
+ 
    **4.** Instalar o Node.js
     
         https://nodejs.org/en
@@ -99,7 +103,8 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
         Node é um ambiente para execução de código em Javascript, para aplicação Web, empacota e interpretar o código em Javascript (Cypress).
       
         https://www.youtube.com/watch?v=vYekSMBCCiM
-      
+
+
    **5.** Terminal do VSCode
       
         No VSCode acessar o Menu Terminal, opção New Terminal
