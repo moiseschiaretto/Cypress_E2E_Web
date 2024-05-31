@@ -251,7 +251,7 @@ Linha de comando para a instalação:
 	
 Gera em "package.json" em "devDependencies"
 
-	"multiple-cucumber-html-reporter": "^1.18.0"
+	"multiple-cucumber-html-reporter": "^3.6.2"
 
 
 **3.** Criar o Arquivo "report.js" na pasta Cypress e adicionar o conteúdo abaixo para o preenchimento do Dashboard.
