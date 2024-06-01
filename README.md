@@ -229,7 +229,7 @@ setupNodeEvents(on, config) {
 Dashboard / Report e Scripts de Execuções em Cypress, segue o passo a passo (são 3 passos no total).
 
 
-**1.** No Arquivo "package.json" add em "cypress-cucumber-preprocessor"
+**1.** No Arquivo "package.json" add em **"cypress-cucumber-preprocessor"**
 
 - Pasta "cucumberJson" irá gerar o BDD apresentado no Dashboard
 
@@ -242,16 +242,42 @@ Dashboard / Report e Scripts de Execuções em Cypress, segue o passo a passo (s
 
 ```
 
+### O Arquivo "package.json" deverá estar conforme exibição abaixo em _"cypress-cucumber-preprocessor"_
+<br>
+
+```
+
+"cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e/step_definitions",
+    "cucumberJson": {
+      "generate": true
+    }
+  }
+
+```
+
+<br>
 
 **2.** Terminal do VS Code digitar a linha de comando abaixo para instalar o "multiple-cucumber-html-reporter"
 
-Linha de comando para a instalação:
+**Linha de comando para a instalação:**
 
-	npm install multiple-cucumber-html-reporter --save-dev
-	
-Gera em "package.json" em "devDependencies"
+```
 
-	"multiple-cucumber-html-reporter": "^3.6.2"
+npm install multiple-cucumber-html-reporter --save-dev
+
+
+```
+
+ 
+**Gera em "package.json" em "devDependencies"**
+
+```
+
+"multiple-cucumber-html-reporter": "^3.6.2"
+
+```
 
 
 **3.** Criar o Arquivo "report.js" na pasta Cypress e adicionar o conteúdo abaixo para o preenchimento do Dashboard.
@@ -262,30 +288,36 @@ Gera em "package.json" em "devDependencies"
 ```
 
 const report = require('multiple-cucumber-html-reporter');
+
+// Obter a data e hora atual
+const currentDateTime = new Date();
+const formattedDateTime = `${currentDateTime.toLocaleString('en-US', { month: 'short' })} ${currentDateTime.getDate()}th ${currentDateTime.getFullYear()}, ${currentDateTime.toLocaleString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}`;
+
 report.generate({
-jsonDir: './cypress/cucumber-json/',
-reportPath: './cypress/cucumber-report/',
-metadata:{
-	device: 'Local test machine',
-browser: {
-	name: 'chrome',
-	version: '92'
-	},
-	platform: {
-	name: 'Windows',
-	version: '10'
-	}
-},
-customData: {
-	title: 'Run info',
-	data: [
-	{label: 'Project', value: 'Automatização em Cypress'},
-	{label: 'Release', value: '1.1'},
-{label: 'Execution Start Time', value: 'Mai 06th 2024, 09:00 AM'},
-	{label: 'Execution End Time', value: 'Mai 06th 2024, 09:05 AM'}
-	]
-}
-});      
+    jsonDir: 'cypress/cucumber-json/',
+    reportPath: 'cypress/cucumber-report/',
+    metadata: {
+        device: 'Local test machine',
+        browser: {
+            name: 'chrome',
+            version: '125'
+        },
+        platform: {
+            name: 'Windows',
+            version: '11'
+        }
+    },
+    customData: {
+        title: 'Run info',
+        data: [
+            { label: 'Project', value: 'Automatização em Cypress' },
+            { label: 'Release', value: '1.1' },
+            { label: 'Execution Start Time', value: formattedDateTime },
+            { label: 'Execution End Time', value: formattedDateTime }
+        ]
+    }
+});
+     
 
 ```
 
@@ -300,39 +332,53 @@ customData: {
 ```
 
 "scripts": {
-	"report:clear": "rm -r cypress/e2e/step_definitions/cucumber-report && rm -r cypress/e2e/step_definitions/cucumber-json
-	|| rm -r cypress/e2e/step_definitions/cucumber-report || rm -r cypress/e2e/step_definitions/cucumber-json",
-	"test1:chrome": "cypress run --spec cypress/e2e/step_definitions/01_WizardDadosVeiculo_SemFalha.feature --browser chrome --headless",
-	"test2:chrome": "cypress run --spec cypress/e2e/step_definitions/02_WizardDadosVeiculo_ComFalha.feature --browser chrome --headless",
-	"test3:chrome": "cypress run --spec cypress/e2e/step_definitions/03_WizardDadosVeiculo_Indefinido.feature --browser chrome --headless",
-	"cy:report": "node .cypress/e2e/step_definitions/report.js",
-	"cy:visit": "C:/Cypress/projeto_web/cypress/cucumber-report/index.html --browser chrome"
-},
+    "report:clear": "if exist cypress\\cucumber-report rd /s /q cypress\\cucumber-report && if exist cypress\\cucumber-json rd /s /q cypress\\cucumber-json",
+    "test1:chrome": "cypress run --spec cypress/e2e/step_definitions/01_WizardDadosVeiculo_SemFalha.feature --browser chrome --headless",
+    "test2:chrome": "cypress run --spec cypress/e2e/step_definitions/02_WizardDadosVeiculo_ComFalha.feature --browser chrome --headless",
+    "test3:chrome": "cypress run --spec cypress/e2e/step_definitions/03_WizardDadosVeiculo_Indefinido.feature --browser chrome --headless",
+    "cy:report": "node cypress/report.js",
+    "cy:visit": "C:/Cypress/projeto_web/cypress/cucumber-report/index.html --browser chrome"
+}
+
+```
+<br>
+
+## Execução dos Scripts acima no Terminal do VSCode
+
+**1.** Excluir as pastas **_"cucumber-json" e "cucumber-report"_** com informações das execuções anteriores.
+
+```
+
+npm run report:clear
 
 ```
 
 
-
-
-## Execução dos Scripts acima no Terminal do VSCode
-
-**1.** Excluir as pastas "cucumber-json" e "cucumber-report" com informações das execuções anteriores.
-
-	npm run report:clear
-
 **2.** Realizar as novas execuções das Features "Sem Falha", "Com Falha", "Indefinido".
 
-	npm run test1:chrome
+```
 
- 	npm run test2:chrome
+npm run test1:chrome
 
-  	npm run test3:chrome
+npm run test2:chrome
+
+npm run test3:chrome
+
+```
 
 **3.** Gerar o report atual.
 
-	npm run cy:report
+```
+
+npm run cy:report
+
+```
 
 **4.** Acessar o Dashboard / Report.
 
-	npm run cy:visit
+```
+
+npm run cy:visit
+
+```
 
