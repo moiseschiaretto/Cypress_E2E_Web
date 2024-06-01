@@ -73,6 +73,20 @@ projeto_web
 
 
 ## Execuções do BDD **"Sem Falha", "Com Falha" e "Indefinido".**
+
+### Exemplo de execuções via browser das _Features do BDD e Métodos do TDD_
+
+Comando digitado no terminal para a execução _**_via browser_**
+<br>
+
+```
+
+npx cypress open
+
+```
+<br>
+### Resultados das execuções das features de testes "via browser"
+
 <br>
 
 |Execução SEM FALHAS	|Execução COM FALHAS	|Execução INDEFINIDO	|
@@ -84,9 +98,12 @@ projeto_web
 
 ***
 
-## Report gerado no Cypress 13
+## Reports gerados no Cypress 13
 <br>
 
+**O multiple-cucumber-html-reporter é uma ferramenta de relatórios para o Cypress**, que integra relatórios gerados pelo Cucumber, fornecendo visualizações detalhadas e personalizadas dos resultados dos testes em formato HTML. Ele permite a geração de relatórios estéticos e informativos para análise dos testes executados.
+
+<br>
 
 |Report SEM FALHAS	|Report COM FALHAS	|Report COM FALHAS	|Report INDEFINIDO	|Report INDEFINIDO	|
 |-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|
@@ -97,6 +114,34 @@ projeto_web
 <br>
 <br>
 
+
+## Exemplo de execuções via terminal das _Features_
+
+Neste exemplo abaixo é um exemplo de testes de suítes de testes, ou seja, três features diferentes que são **"Sem Falha", "Com Falha" e "Indefinido".**
+
+Comando digitado no terminal para a execução via terminal
+<br>
+
+```
+
+npm run tests.cy.js
+
+```
+
+<br>
+
+## Resultado da execução das três suítes de testes "via terminal"
+<br>
+
+|Execução SEM FALHAS	|Execução COM FALHAS	|Execução INDEFINIDO	|
+|-----------------------|-----------------------|-----------------------|
+|
+
+<br>
+
+
+<br>
+<br>
 ***
 
 ## Configuração básica do Ambiente do Trabalho no Cypress 13 - Projeto "projeto_web"
