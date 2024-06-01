@@ -131,7 +131,6 @@ npm run tests.cy.js
 ```
 <br>
 
-
 ## Execução dos Scripts acima no Terminal do VSCode
 
 ### Realizar as novas execuções das Features "Sem Falha", "Com Falha", "Indefinido".
