@@ -91,7 +91,7 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
 ***
 
-## Configuração básica do Ambiente do Projeto "projeto_web"
+## Configuração básica do Ambiente do Trabalho no Cypress 13 - Projeto "projeto_web"
 
 ### Pré-requisitos
 <br>
