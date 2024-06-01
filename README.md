@@ -292,6 +292,7 @@ Adicionar a este arquivo a seguinte configuração.
 
 ```
 
+***
 
 ## Arquivo "report.js"
 
