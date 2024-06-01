@@ -3,6 +3,12 @@
   
 - Descrição das explicações de cada item da 'estrutura do projeto "projeto_web" desenvolvido'.
   
+- Testes com 3 (três) _suítes de testes_, ou seja, utilizando 3 (três) FEATURES que são cenários de BDD **"Sem Falha", "Com Falha" e "Indefinido".**
+
+- Os testes podem serem executados via **brouser ou terminal** com scripts gravados no **arquivo package.json"**, gerando reports com a ferramenta **multiple-cucumber-html-reporter**.
+
+- **O multiple-cucumber-html-reporter é uma ferramenta de relatórios para o Cypress**, que integra relatórios gerados pelo Cucumber, fornecendo visualizações detalhadas e personalizadas dos resultados dos testes em formato HTML. Ele permite a geração de relatórios estéticos e informativos para análise dos testes executados.
+  
 - **Cypress versão 13**
 
 ![03_cypress_logo_social](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/40934ac1-0e60-4c1c-8682-876510e3f40c)
