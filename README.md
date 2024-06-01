@@ -11,7 +11,7 @@
 ## Entendendo o Ambiente de Automatização de Testes do Cypress 13
 
 ![01_Ambiente_DEV_Cypress](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/893d54c9-46f3-46e7-b032-38c4e18a3063)
-
+<br>
   
 
 ## Estrutura do Projeto "projeto_web"
@@ -46,6 +46,7 @@ projeto_web
 		|---cucumber-report
 		|---cucumber-json
 ```
+<br>
 
 ## Arquivo README.md
 Explicações da Estrutura do Projeto e as suas respectivas configurações.
@@ -53,129 +54,182 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 ## Diretório "step_definitions"
 - Cenários de BDD **"Sem Falha", "Com Falha" e "Indefinido".**
 
-  	- 01_WizardDadosVeiculo_SemFalha.feature
-  	  
-  	- 02_WizardDadosVeiculo_ComFalha.feature
- 
-  	- 03_WizardDadosVeiculo_Indefinido.feature
+- 01_WizardDadosVeiculo_SemFalha.feature
+
+- 02_WizardDadosVeiculo_ComFalha.feature
+
+- 03_WizardDadosVeiculo_Indefinido.feature
 
 
 ![18_TDD](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/5417acfb-fe89-4b43-aac5-2d9783e54236)
-
+<br>
 
 ![TDD_RGR_IMG_MENOR](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/a8cbb950-60e5-4353-a31f-4445011251a0)
+<br>
 
 
 ## Execuções do BDD **"Sem Falha", "Com Falha" e "Indefinido".**
+<br>
 
 ![01_EXECUCAO_SEM_FALHA](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/4254e737-9b51-4ce8-a044-a46218478eb6)
+<br>
 
 ![02_EXECUCAO_COM_FALHA](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/a3418e1e-eaf6-4c50-8228-f2c9ef599b15)
+<br>
 
 ![03_EXECUCAO_INDEFERIDO](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/252bdea1-a138-4f18-b938-63eec260c68f)
-
+<br>
 
 
 ## Configuração básica do Ambiente do Projeto "projeto_web"
   
-   **1.** Instalar o VSCode
-      
-        https://code.visualstudio.com
+**1.** Instalar o VSCode
+```
 
-      
-   **2.** Configurar o VSCode conforme o estilo do desenvolvedor / QA
-      
-        Curso gratuito para personalizar o VSCode, apenas inscrever-se no site.
-      
-        https://www.udemy.com/course/produtividade-vscode
-      
-   **3**. VSCode cores do ambiente de trabalho
-   
-        - Menu View, Command Palette ou Teclas CTRL + SHIFT + P
-	
-        - Preferences: Color Theme
+https://code.visualstudio.com
 
- 
-   **4.** Instalar o Node.js
-    
-        https://nodejs.org/en
-      
-        Node é um ambiente para execução de código em Javascript, para aplicação Web, empacota e interpretar o código em Javascript (Cypress).
-      
-        https://www.youtube.com/watch?v=vYekSMBCCiM
+```
+<br>
+
+**2.** Configurar o VSCode conforme o estilo do desenvolvedor / QA
+
+Curso gratuito para personalizar o VSCode, apenas inscrever-se no site.
+
+```
+
+https://www.udemy.com/course/produtividade-vscode
+
+```
+<br>
+
+**3**. VSCode cores do ambiente de trabalho
+
+- Menu View, Command Palette ou Teclas CTRL + SHIFT + P
+
+- Preferences: Color Theme
 
 
-   **5.** Terminal do VSCode
-      
-        No VSCode acessar o Menu Terminal, opção New Terminal
-      
-        Teclas de atalho: CTRL + SHIFT + ‘ (aspas simples)
-      
-   **6.** Acesssar a pasta/diretório do "projeto" para depois instalar as configurações do Cypress 13 ou versão posterior
-      
-        - No terminal digitar o comando "cd" e o caminho da pasta/diretório do projeto, por exemplo:
-          
-        cd C:\Cypress\projeto_web
-      
-   **8.** Estando dentro da pasta/diretório do "projeto", digitar:
-      
-        npm init -y
-      
-        - Este comando acima irá criar o arquivo "package.json".
-          
-   **9.** Instalar o Cypress 13 ou versão posterior, digitar:
-       
-        npm install cypress --save-dev
-      
-   **10.** Instalar o plugin do Cucumber, que permite escrever na linguagem Gherkin o BDD, digitar:
-       
-        npm install cypress-cucumber-preprocessor --save-dev
-       
-   **11.** Acessar o Cypress para criar a estrutura inicial do projeto, digitar:
-       
-        npx cypress open
-       
-   **12.** Aguardar a janela do Cypress ser exibida, clicar sobre a opção:
-       
-        "E2E Testing"
-          
-   **13.** Clicar no botão "Start E2E Testing in Chrome".
-       
-   **14.** Fechar a janela do "Cypress".
+**4.** Instalar o Node.js
 
-   **15.** Observar que no "Frame EXPLORER" à esquerda da tela foi criada a estrutura inicial do projeto.
- 
-   **16.** Aproveitar para instalar o comando "xpath" caso precisar utilizar no código, digitar no terminal:
+https://nodejs.org/en
 
-        npm install -D cypress-xpath
+Node é um ambiente para execução de código em Javascript, para aplicação Web, empacota e interpretar o código em Javascript (Cypress).
+
+https://www.youtube.com/watch?v=vYekSMBCCiM
+
+
+**5.** Terminal do VSCode
+
+No VSCode acessar o Menu Terminal, opção New Terminal
+
+Teclas de atalho: CTRL + SHIFT + ‘ (aspas simples)
+
+
+**6.** Acesssar a pasta/diretório do "projeto" para depois instalar as configurações do Cypress 13 ou versão posterior
+
+- No terminal digitar o comando "cd" e o caminho da pasta/diretório do projeto, por exemplo:
+
+```
+
+cd C:\Cypress\projeto_web
+
+```
+<br>
+
+
+**8.** Estando dentro da pasta/diretório do "projeto", digitar:
+
+```
+
+npm init -y
+
+```
+<br>
+
+- Este comando acima irá criar o arquivo "package.json".
+
+
+**9.** Instalar o Cypress 13 ou versão posterior, digitar:
+
+```
+
+npm install cypress --save-dev
+
+```
+<br>
+
+**10.** Instalar o plugin do Cucumber, que permite escrever na linguagem Gherkin o BDD, digitar:
+
+```
+
+npm install cypress-cucumber-preprocessor --save-dev
+
+```
+<br>
+
+
+**11.** Acessar o Cypress para criar a estrutura inicial do projeto, digitar:
+
+```
+
+npx cypress open
+
+```
+<br>
+
+
+**12.** Aguardar a janela do Cypress ser exibida, clicar sobre a opção:
+
+"E2E Testing"
+
+
+**13.** Clicar no botão "Start E2E Testing in Chrome".
+
+
+**14.** Fechar a janela do "Cypress".
+
+
+**15.** Observar que no "Frame EXPLORER" à esquerda da tela foi criada a estrutura inicial do projeto.
+
+
+**16.** Aproveitar para instalar o comando "xpath" caso precisar utilizar no código, digitar no terminal:
+
+```
+
+npm install -D cypress-xpath
+
+```
+<br>
 
 
 ## Arquivo "e2e.js"
-   - Caminho na estrutura do projeto: projeto_web\cypress\support\e2e.js
+- Caminho na estrutura do projeto: projeto_web\cypress\support\e2e.js
+
+- Adicionar a este arquivo a seguinte configuração.
      
-   - Adicionar a este arquivo a seguinte configuração.
-     
-   ```
-	// Exceções não detectadas
-	// https://docs.cypress.io/guides/references/error-messages#Uncaught-exceptions-from-your-application
-	// https://docs.cypress.io/api/cypress-api/catalog-of-events#Uncaught-Exceptions
-	Cypress.on('uncaught:exception', (err, runnable) => {
-		// returning false here prevents Cypress from
-		// failing the test
-	return false
-	})
-	// Xpath, opcional na versão 13 do Cypress
-	require('cypress-xpath')
-   ```
+```
+
+// Exceções não detectadas
+// https://docs.cypress.io/guides/references/error-messages#Uncaught-exceptions-from-your-application
+// https://docs.cypress.io/api/cypress-api/catalog-of-events#Uncaught-Exceptions
+Cypress.on('uncaught:exception', (err, runnable) => {
+	// returning false here prevents Cypress from
+	// failing the test
+return false
+})
+// Xpath, opcional na versão 13 do Cypress
+require('cypress-xpath')
+
+```
 
 
 ## Arquivo "cypress.config.js"
 
-   - Caminho na estrutura do projeto: projeto_web\cypress.config.js
+- Caminho na estrutura do projeto: projeto_web\cypress.config.js
 
-   Adicionar a este arquivo a seguinte configuração.
-   
-   
+Adicionar a este arquivo a seguinte configuração.
+
+
 ```
 
 const cucumber = require('cypress-cucumber-preprocessor').default;
@@ -203,21 +257,22 @@ setupNodeEvents(on, config) {
 },
 })
 
-   ```
+```
 
 ## Arquivo "package.json"
 
-   - Caminho na estrutura do projeto: projeto_web\package.json
+Caminho na estrutura do projeto: projeto_web\package.json
      
-   Adicionar a este arquivo a seguinte configuração.
+Adicionar a este arquivo a seguinte configuração.
       
 ```
+
 ,
 "cypress-cucumber-preprocessor": {
-"nonGlobalStepDefinitions": false,
-"stepDefinitions": "cypress/e2e/step_definitions"
+	"nonGlobalStepDefinitions": false,
+	"stepDefinitions": "cypress/e2e/step_definitions"
 },
-"cucumberJson": {
+	"cucumberJson": {
 "generate": true
 }
 
@@ -232,7 +287,6 @@ Dashboard / Report e Scripts de Execuções em Cypress, segue o passo a passo (s
 **1.** No Arquivo "package.json" add em **"cypress-cucumber-preprocessor"**
 
 - Pasta "cucumberJson" irá gerar o BDD apresentado no Dashboard
-
 
 ```
 ,
@@ -251,13 +305,13 @@ Dashboard / Report e Scripts de Execuções em Cypress, segue o passo a passo (s
     "nonGlobalStepDefinitions": false,
     "stepDefinitions": "cypress/e2e/step_definitions",
     "cucumberJson": {
-      "generate": true
+        "generate": true
     }
-  }
+}
 
 ```
-
 <br>
+
 
 **2.** Terminal do VS Code digitar a linha de comando abaixo para instalar o "multiple-cucumber-html-reporter"
 
@@ -267,8 +321,8 @@ Dashboard / Report e Scripts de Execuções em Cypress, segue o passo a passo (s
 
 npm install multiple-cucumber-html-reporter --save-dev
 
-
 ```
+<br>
 
  
 **Gera em "package.json" em "devDependencies"**
@@ -278,7 +332,7 @@ npm install multiple-cucumber-html-reporter --save-dev
 "multiple-cucumber-html-reporter": "^3.6.2"
 
 ```
-
+<br>
 
 **3.** Criar o Arquivo "report.js" na pasta Cypress e adicionar o conteúdo abaixo para o preenchimento do Dashboard.
 
@@ -320,7 +374,7 @@ report.generate({
      
 
 ```
-
+<br>
 
 ## Scripts de Execução
 
@@ -343,6 +397,7 @@ report.generate({
 ```
 <br>
 
+
 ## Execução dos Scripts acima no Terminal do VSCode
 
 **1.** Excluir as pastas **_"cucumber-json" e "cucumber-report"_** com informações das execuções anteriores.
@@ -352,6 +407,7 @@ report.generate({
 npm run report:clear
 
 ```
+<br>
 
 
 **2.** Realizar as novas execuções das Features "Sem Falha", "Com Falha", "Indefinido".
@@ -365,6 +421,8 @@ npm run test2:chrome
 npm run test3:chrome
 
 ```
+<br>
+
 
 **3.** Gerar o report atual.
 
@@ -373,6 +431,8 @@ npm run test3:chrome
 npm run cy:report
 
 ```
+<br>
+
 
 **4.** Acessar o Dashboard / Report.
 
@@ -381,4 +441,5 @@ npm run cy:report
 npm run cy:visit
 
 ```
+<br>
 
