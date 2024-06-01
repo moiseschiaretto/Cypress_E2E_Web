@@ -71,15 +71,12 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 ## Execuções do BDD **"Sem Falha", "Com Falha" e "Indefinido".**
 <br>
 
-![01_EXECUCAO_SEM_FALHA](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/4254e737-9b51-4ce8-a044-a46218478eb6)
+|Execução SEM FALHAS	|Execução COM FALHAS	|Execução INDEFINIDO	|
+|-----------------------|-----------------------|-----------------------|
+| ![01_EXECUCAO_SEM_FALHA](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/4254e737-9b51-4ce8-a044-a46218478eb6) | ![02_EXECUCAO_COM_FALHA](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/a3418e1e-eaf6-4c50-8228-f2c9ef599b15) | ![03_EXECUCAO_INDEFERIDO](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/252bdea1-a138-4f18-b938-63eec260c68f) |
+<br>
 <br>
 
-![02_EXECUCAO_COM_FALHA](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/a3418e1e-eaf6-4c50-8228-f2c9ef599b15)
-<br>
-
-![03_EXECUCAO_INDEFERIDO](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/252bdea1-a138-4f18-b938-63eec260c68f)
-<br>
-<br>
 
 ***
 
