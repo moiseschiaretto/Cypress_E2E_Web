@@ -3,6 +3,6 @@
 /cypress/fixtures/
 /cypress/e2e/step_definitions/evidencias/
 /cypress/e2e/step_definitions/resources/
-/cypress/e2e/report.js
-/cypress/e2e/cucumber-report/
-/cypress/e2e/cucumber-json/
+/cypress/report.js
+/cypress/cucumber-report/
+/cypress/cucumber-json/
