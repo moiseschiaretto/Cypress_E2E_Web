@@ -81,12 +81,13 @@ projeto_web
 ## Report gerado no Cypress 13
 <br>
 
-### Para gerar um report no Cypress 13 consultar _"Configurar um "report" no Cypress"_ no final deste documento
-<br>
 
 |Report SEM FALHAS	|Report COM FALHAS	|Report COM FALHAS	|Report INDEFINIDO	|Report INDEFINIDO	|
 |-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|
 | <img width="680" alt="04_Cucumber_Report" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/c5757c8d-02d5-4cab-8769-b49a41ead003"> | <img width="680" alt="05_Cucumber_Report_FALHA" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/5c6fdc6c-a780-4be0-97c3-3204377d009a"> | <img width="680" alt="06_Cucumber_Report_FALHA" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/10c93848-8521-49e8-9f39-ae1e9677b823"> | <img width="680" alt="07_Cucumber_Report_INDEFINIDO" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/dc48fd4f-ab6e-40fe-b3ab-7c0ebf9819c4"> | <img width="680" alt="08_Cucumber_Report_INDEFINIDO" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/28af7445-2374-4d22-9676-bd5012508a6e"> |
+<br>
+
+### Para gerar um report no Cypress 13 consultar _"Configurar um "report" no Cypress"_ no final deste documento
 <br>
 <br>
 
