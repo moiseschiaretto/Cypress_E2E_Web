@@ -269,11 +269,11 @@ Adicionar a este arquivo a seguinte configuração.
 
 ,
 "cypress-cucumber-preprocessor": {
-	"nonGlobalStepDefinitions": false,
-	"stepDefinitions": "cypress/e2e/step_definitions"
-},
-	"cucumberJson": {
-"generate": true
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e/step_definitions",
+    "cucumberJson": {
+        "generate": true
+    }
 }
 
 ```
