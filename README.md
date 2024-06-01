@@ -48,8 +48,6 @@ projeto_web
 ```
 <br>
 
-## Arquivo README.md
-Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
 ## Diretório "step_definitions"
 - Cenários de BDD **"Sem Falha", "Com Falha" e "Indefinido".**
