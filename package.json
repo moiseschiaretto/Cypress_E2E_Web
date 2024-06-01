@@ -4,26 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "report:clear": "rm -r cypress/e2e/step_definitions/cucumber-report && rm -r cypress/e2e/step_definitions/cucumber-json || rm -r cypress/e2e/step_definitions/cucumber-report || rm -r cypress/e2e/step_definitions/cucumber-json",
+    "report:clear": "if exist cypress\\cucumber-report rd /s /q cypress\\cucumber-report && if exist cypress\\cucumber-json rd /s /q cypress\\cucumber-json",
     "test1:chrome": "cypress run --spec cypress/e2e/step_definitions/01_WizardDadosVeiculo_SemFalha.feature --browser chrome --headless",
     "test2:chrome": "cypress run --spec cypress/e2e/step_definitions/02_WizardDadosVeiculo_ComFalha.feature --browser chrome --headless",
     "test3:chrome": "cypress run --spec cypress/e2e/step_definitions/03_WizardDadosVeiculo_Indefinido.feature --browser chrome --headless",
-    "cy:report": "node .cypress/e2e/step_definitions/report.js",
+    "cy:report": "node cypress/report.js",
     "cy:visit": "C:/Cypress/projeto_web/cypress/cucumber-report/index.html --browser chrome"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.8.1",
+    "cypress": "^13.10.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "multiple-cucumber-html-reporter": "^3.6.2"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "stepDefinitions": "cypress/e2e/step_definitions"
-  },
-  "cucumberJson": {
-    "generate": true
+    "stepDefinitions": "cypress/e2e/step_definitions",
+    "cucumberJson": {
+      "generate": true
+    }
   }
 }
