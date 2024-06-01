@@ -79,11 +79,28 @@ Explicações da Estrutura do Projeto e as suas respectivas configurações.
 
 ![03_EXECUCAO_INDEFERIDO](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/252bdea1-a138-4f18-b938-63eec260c68f)
 <br>
+<br>
 
+***
+
+## Report gerado no Cypress 13
+<br>
+
+|Report SEM FALHAS	|Report COM FALHAS	|Report COM FALHAS	|Report INDEFINIDO	|Report INDEFINIDO	|
+|-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|
+| <img width="680" alt="04_Cucumber_Report" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/c5757c8d-02d5-4cab-8769-b49a41ead003"> | <img width="680" alt="05_Cucumber_Report_FALHA" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/5c6fdc6c-a780-4be0-97c3-3204377d009a"> | <img width="680" alt="06_Cucumber_Report_FALHA" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/10c93848-8521-49e8-9f39-ae1e9677b823"> | <img width="680" alt="07_Cucumber_Report_INDEFINIDO" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/dc48fd4f-ab6e-40fe-b3ab-7c0ebf9819c4"> | <img width="680" alt="08_Cucumber_Report_INDEFINIDO" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/28af7445-2374-4d22-9676-bd5012508a6e"> |
+<br>
+<br>
+
+***
 
 ## Configuração básica do Ambiente do Projeto "projeto_web"
-  
+
+### Pré-requisitos
+<br>
+
 **1.** Instalar o VSCode
+
 ```
 
 https://code.visualstudio.com
@@ -441,15 +458,6 @@ npm run cy:report
 npm run cy:visit
 
 ```
-<br>
-<br>
-
-## Report gerado no Cypress 13
-<br>
-
-|Report SEM FALHAS	|Report COM FALHAS	|Report COM FALHAS	|Report INDEFINIDO	|Report INDEFINIDO	|
-|-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|
-| <img width="680" alt="04_Cucumber_Report" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/c5757c8d-02d5-4cab-8769-b49a41ead003"> | <img width="680" alt="05_Cucumber_Report_FALHA" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/5c6fdc6c-a780-4be0-97c3-3204377d009a"> | <img width="680" alt="06_Cucumber_Report_FALHA" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/10c93848-8521-49e8-9f39-ae1e9677b823"> | <img width="680" alt="07_Cucumber_Report_INDEFINIDO" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/dc48fd4f-ab6e-40fe-b3ab-7c0ebf9819c4"> | <img width="680" alt="08_Cucumber_Report_INDEFINIDO" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/28af7445-2374-4d22-9676-bd5012508a6e"> |
 <br>
 <br>
 
