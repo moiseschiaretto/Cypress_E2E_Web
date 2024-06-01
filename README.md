@@ -153,15 +153,14 @@ npm run test3:chrome
 ## Resultado da execução das três suítes de testes "via terminal"
 <br>
 
-|Execução SEM FALHAS	|Execução COM FALHAS	|Execução INDEFINIDO	|
-|-----------------------|-----------------------|-----------------------|
-|
-
-
-
+|Execução SEM FALHAS		|Execução COM FALHAS		|Execução INDEFINIDO		|
+|-------------------------------|-------------------------------|-------------------------------|
+| <img width="442" alt="10_Terminal_Execucao_Feature_SEM_Falhas" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/e77411ca-6686-4043-a149-aaaeedff429c"> | <img width="428" alt="12_Terminal_Execucao_Feature_COM_Falhas" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/08cd1ce1-177b-4e4f-8e16-b9ba1496993e"> | <img width="473" alt="14_Terminal_Execucao_Feature_INDEFINIDO" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/c77c981e-275c-43d5-a6dc-8ccb33fe730c"> |
+| <img width="434" alt="11_Terminal_Execucao_Feature_SEM_Falhas" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/72e8f022-5cb4-4206-ae32-16168f02bc32"> | <img width="647" alt="13_Terminal_Execucao_Feature_COM_Falhas" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/f2f6d018-17d8-49f1-a24f-46de07c88594"> | <img width="472" alt="15_Terminal_Execucao_Feature_INDEFINIDO" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/168b76a3-d2da-42de-973d-d8dfe72d3343"> |
 
 <br>
 <br>
+
 
 ***
 
