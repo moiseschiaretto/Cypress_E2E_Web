@@ -3,7 +3,7 @@
   
 - Descrição das explicações de cada item da 'estrutura do projeto "projeto_web" desenvolvido'.
   
-- Testes com 3 (três) _suítes de testes_, ou seja, utilizando 3 (três) FEATURES que são cenários de BDD **"Sem Falha", "Com Falha" e "Indefinido".**
+- Testes com **_3 (três) suítes de testes_**, ou seja, utilizando 3 (três) FEATURES que são cenários de BDD **"Sem Falha", "Com Falha" e "Indefinido".**
 
 - Os testes podem serem executados via **brouser ou terminal** com scripts gravados no **arquivo package.json"**, gerando reports com a ferramenta **multiple-cucumber-html-reporter**.
 
