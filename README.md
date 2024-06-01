@@ -294,6 +294,8 @@ Adicionar a este arquivo a seguinte configuração.
 
 ***
 
+## Configurar um "report" no Cypress
+
 ## Arquivo "report.js"
 
 Dashboard / Report e Scripts de Execuções em Cypress, segue o passo a passo (são 3 passos no total).
