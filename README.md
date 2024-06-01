@@ -98,6 +98,73 @@ npx cypress open
 
 ***
 
+## Exemplo de execuções via terminal das _Features_
+
+Neste exemplo abaixo é um exemplo de testes de suítes de testes, ou seja, três features diferentes que são **"Sem Falha", "Com Falha" e "Indefinido".**
+
+Comando digitado no terminal para a execução via terminal
+<br>
+
+```
+
+npm run tests.cy.js
+
+```
+
+## Scripts de Execução
+
+- Criar Scripts de Execução no Arquivo "package.json", para facilitar a execução do projeto.
+
+- Caso desejar criar "scripts" de execuções do projeto, adicionar no arquivo "package.json".
+	
+```
+
+"scripts": {
+    "report:clear": "if exist cypress\\cucumber-report rd /s /q cypress\\cucumber-report && if exist cypress\\cucumber-json rd /s /q cypress\\cucumber-json",
+    "test1:chrome": "cypress run --spec cypress/e2e/step_definitions/01_WizardDadosVeiculo_SemFalha.feature --browser chrome --headless",
+    "test2:chrome": "cypress run --spec cypress/e2e/step_definitions/02_WizardDadosVeiculo_ComFalha.feature --browser chrome --headless",
+    "test3:chrome": "cypress run --spec cypress/e2e/step_definitions/03_WizardDadosVeiculo_Indefinido.feature --browser chrome --headless",
+    "cy:report": "node cypress/report.js",
+    "cy:visit": "C:/Cypress/projeto_web/cypress/cucumber-report/index.html --browser chrome"
+}
+
+```
+<br>
+
+
+## Execução dos Scripts acima no Terminal do VSCode
+
+### Realizar as novas execuções das Features "Sem Falha", "Com Falha", "Indefinido".
+<br>
+
+```
+
+npm run test1:chrome
+
+npm run test2:chrome
+
+npm run test3:chrome
+
+```
+
+<br>
+<br>
+
+## Resultado da execução das três suítes de testes "via terminal"
+<br>
+
+|Execução SEM FALHAS	|Execução COM FALHAS	|Execução INDEFINIDO	|
+|-----------------------|-----------------------|-----------------------|
+|
+
+
+
+
+<br>
+<br>
+
+***
+
 ## Reports gerados no Cypress 13
 <br>
 
@@ -115,33 +182,6 @@ npx cypress open
 <br>
 
 
-## Exemplo de execuções via terminal das _Features_
-
-Neste exemplo abaixo é um exemplo de testes de suítes de testes, ou seja, três features diferentes que são **"Sem Falha", "Com Falha" e "Indefinido".**
-
-Comando digitado no terminal para a execução via terminal
-<br>
-
-```
-
-npm run tests.cy.js
-
-```
-
-<br>
-
-## Resultado da execução das três suítes de testes "via terminal"
-<br>
-
-|Execução SEM FALHAS	|Execução COM FALHAS	|Execução INDEFINIDO	|
-|-----------------------|-----------------------|-----------------------|
-|
-
-<br>
-
-
-<br>
-<br>
 ***
 
 ## Configuração básica do Ambiente do Trabalho no Cypress 13 - Projeto "projeto_web"
