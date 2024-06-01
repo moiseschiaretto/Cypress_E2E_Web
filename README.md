@@ -150,7 +150,6 @@ npm run test3:chrome
 <br>
 
 ## Resultado da execução das três suítes de testes "via terminal"
-<br>
 
 |Execução SEM FALHAS		|Execução COM FALHAS		|Execução INDEFINIDO		|
 |-------------------------------|-------------------------------|-------------------------------|
@@ -158,8 +157,6 @@ npm run test3:chrome
 | <img width="434" alt="11_Terminal_Execucao_Feature_SEM_Falhas" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/72e8f022-5cb4-4206-ae32-16168f02bc32"> | <img width="647" alt="13_Terminal_Execucao_Feature_COM_Falhas" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/f2f6d018-17d8-49f1-a24f-46de07c88594"> | <img width="472" alt="15_Terminal_Execucao_Feature_INDEFINIDO" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/168b76a3-d2da-42de-973d-d8dfe72d3343"> |
 
 <br>
-<br>
-
 
 ***
 
