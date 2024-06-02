@@ -80,7 +80,7 @@ projeto_web
 
 ## Execuções do BDD **"Sem Falha", "Com Falha" e "Indefinido".**
 
-### Exemplo de execuções via browser das _Features do BDD e Métodos do TDD_
+### Exemplo de execuções "_via browser_" das _Features do BDD e Métodos do TDD_
 
 Comando digitado no terminal para a execução _**_via browser_**
 <br>
@@ -105,7 +105,7 @@ npx cypress open
 
 ***
 
-## Exemplo de execuções via terminal das _Features_
+### Exemplo de execuções "_via terminal_" das _Features do BDD e Métodos do TDD_
 
 Neste exemplo abaixo é um exemplo de testes de suítes de testes, ou seja, três features diferentes que são **"Sem Falha", "Com Falha" e "Indefinido".**
 
