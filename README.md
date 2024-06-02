@@ -10,9 +10,15 @@
 - **O multiple-cucumber-html-reporter é uma ferramenta de relatórios para o Cypress**, que integra relatórios gerados pelo Cucumber, fornecendo visualizações detalhadas e personalizadas dos resultados dos testes em formato HTML. Ele permite a geração de relatórios estéticos e informativos para análise dos testes executados.
   
 - **Cypress versão 13**
+<br>
 
-![03_cypress_logo_social](https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/40934ac1-0e60-4c1c-8682-876510e3f40c)
+|Node.js	|IDE VSCode    	|Cypress	|HTML / CSS / JS	|XPATH		|
+|---------------|---------------|---------------|-----------------------|---------------|
+| <img width="93" alt="02_Node_JS" src="https://github.com/moiseschiaretto/Cypress_E2E_API_REST/assets/84775466/1102f809-71e4-4fd2-8ff4-c9d1fee55034"> | ![VS_CODE](https://github.com/moiseschiaretto/Cypress_E2E_API_REST/assets/84775466/5a192e0c-e2e8-410c-b4d9-9e861ebfe387) | ![03_cypress_logo_social](https://github.com/moiseschiaretto/Cypress_E2E_API_REST/assets/84775466/b0d41a63-a321-477d-b76f-39934329473d) | <img width="236" alt="00_HTML_CSS_JS" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/051ee153-a12a-43bd-a3c2-9fcb66e59795"> | <img width="142" alt="00_XPATH" src="https://github.com/moiseschiaretto/Cypress_E2E_Web/assets/84775466/ae30d9f7-171c-4edc-91d3-ecb025c6322c"> |
 
+
+
+<br>
 
 ## Entendendo o Ambiente de Automatização de Testes do Cypress 13
 
