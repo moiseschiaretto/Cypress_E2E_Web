@@ -91,6 +91,7 @@ npx cypress open
 
 ```
 <br>
+
 ### Resultados das execuções das features de testes "via browser"
 
 <br>
