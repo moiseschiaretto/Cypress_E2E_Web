@@ -248,14 +248,14 @@ cd C:\Cypress\projeto_web
 
 **8.** Estando dentro da pasta/diretório do "projeto", digitar:
 
+- Este comando abaixo irá criar o arquivo "package.json".
+
 ```
 
 npm init -y
 
 ```
 <br>
-
-- Este comando acima irá criar o arquivo "package.json".
 
 
 **9.** Instalar o Cypress 13 ou versão posterior, digitar:
