@@ -431,7 +431,7 @@ Dashboard / Report e Scripts de Execuções em Cypress, segue o passo a passo (s
 
 ```
 
-npm install multiple-cucumber-html-reporter --save-dev
+npm install --save-dev multiple-cucumber-html-reporter
 
 ```
 <br>
