@@ -262,7 +262,7 @@ npm init -y
 
 ```
 
-npm install cypress --save-dev
+npm install --save-dev cypress
 
 ```
 <br>
