@@ -271,7 +271,7 @@ npm install cypress --save-dev
 
 ```
 
-npm install cypress-cucumber-preprocessor --save-dev
+npm install --save-dev cypress-cucumber-preprocessor
 
 ```
 <br>
